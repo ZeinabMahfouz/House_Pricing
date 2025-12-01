@@ -1,0 +1,43 @@
+Feature,Category,Short_Description,Description,Type,Example,Importance
+MSSubClass,Building,Building Class,Identifies the type of dwelling involved in the sale,Categorical,20 = 1-Story 1946+,Medium
+LotFrontage,Lot,Linear Feet of Street,Linear feet of street connected to property,Numeric,80 feet,Medium
+LotArea,Lot,Lot Size,Lot size in square feet,Numeric,9600 sq ft,High
+OverallQual,Quality,Overall Quality,Rates the overall material and finish of the house (1-10),Ordinal,7 = Good,High
+OverallCond,Quality,Overall Condition,Rates the overall condition of the house (1-10),Ordinal,5 = Average,Medium
+YearBuilt,Time,Year Built,Original construction date,Numeric,2003,High
+YearRemodAdd,Time,Remodel Date,Remodel date (same as construction date if no remodeling or additions),Numeric,2003,Medium
+GrLivArea,Size,Living Area,Above grade (ground) living area square feet,Numeric,1710 sq ft,High
+TotalBsmtSF,Size,Total Basement Area,Total square feet of basement area,Numeric,856 sq ft,High
+1stFlrSF,Size,First Floor Area,First Floor square feet,Numeric,856 sq ft,High
+2ndFlrSF,Size,Second Floor Area,Second floor square feet,Numeric,854 sq ft,Medium
+FullBath,Bathroom,Full Bathrooms,Full bathrooms above grade,Numeric,2,Medium
+HalfBath,Bathroom,Half Bathrooms,Half baths above grade,Numeric,1,Low
+BedroomAbvGr,Room,Bedrooms,Bedrooms above grade (does NOT include basement bedrooms),Numeric,3,Medium
+KitchenAbvGr,Room,Kitchens,Kitchens above grade,Numeric,1,Low
+TotRmsAbvGrd,Room,Total Rooms,Total rooms above grade (does not include bathrooms),Numeric,8,Medium
+Fireplaces,Amenity,Fireplaces,Number of fireplaces,Numeric,0,Low
+GarageCars,Garage,Garage Size,Size of garage in car capacity,Numeric,2 cars,High
+GarageArea,Garage,Garage Area,Size of garage in square feet,Numeric,548 sq ft,High
+PoolArea,Amenity,Pool Area,Pool area in square feet,Numeric,0,Low
+TotalSF,Engineered,Total Square Footage,Total square footage = TotalBsmtSF + 1stFlrSF + 2ndFlrSF,Numeric,2560 sq ft,High
+TotalBath,Engineered,Total Bathrooms,Total bathrooms = FullBath + 0.5*HalfBath + BsmtFullBath + 0.5*BsmtHalfBath,Numeric,2.5,Medium
+HouseAge,Engineered,House Age,Age of house = YrSold - YearBuilt,Numeric,17 years,High
+RemodAge,Engineered,Remodel Age,Years since remodel = YrSold - YearRemodAdd,Numeric,17 years,Medium
+TotalPorchSF,Engineered,Total Porch Area,Total porch area = OpenPorchSF + EnclosedPorch + 3SsnPorch + ScreenPorch,Numeric,61 sq ft,Low
+HasPool,Engineered,Has Pool,Binary indicator if house has a pool (1=Yes 0=No),Binary,0,Low
+Has2ndFloor,Engineered,Has Second Floor,Binary indicator if house has second floor (1=Yes 0=No),Binary,1,Medium
+HasGarage,Engineered,Has Garage,Binary indicator if house has garage (1=Yes 0=No),Binary,1,High
+HasBsmt,Engineered,Has Basement,Binary indicator if house has basement (1=Yes 0=No),Binary,1,Medium
+HasFireplace,Engineered,Has Fireplace,Binary indicator if house has fireplace (1=Yes 0=No),Binary,0,Low
+OverallQualCond,Engineered,Quality × Condition,Interaction feature = OverallQual × OverallCond,Numeric,35,Medium
+BsmtQual,Quality,Basement Quality,Evaluates the height of the basement (0=None to 5=Excellent),Ordinal,4 = Good,Medium
+ExterQual,Quality,Exterior Quality,Evaluates the quality of the material on the exterior (1-5),Ordinal,4 = Good,High
+KitchenQual,Quality,Kitchen Quality,Kitchen quality (1-5),Ordinal,4 = Good,Medium
+Neighborhood,Location,Neighborhood,Physical locations within Ames city limits,Categorical,CollgCr,High
+BldgType,Building,Building Type,Type of dwelling,Categorical,1Fam = Single-family,Medium
+HouseStyle,Building,House Style,Style of dwelling,Categorical,2Story,Medium
+Condition1,Location,Proximity to Conditions,Proximity to various conditions (main road railroad etc),Categorical,Norm = Normal,Low
+SaleType,Sale,Type of Sale,Type of sale,Categorical,WD = Warranty Deed,Low
+SaleCondition,Sale,Condition of Sale,Condition of sale,Categorical,Normal,Low
+YrSold,Time,Year Sold,Year sold (YYYY),Numeric,2008,Low
+MoSold,Time,Month Sold,Month sold (MM),Numeric,2,Low
