@@ -958,7 +958,7 @@ else:  # About page
         st.markdown("""
         ### 📧 Contact & Support
         
-        - 📖 [Documentation](#)
+        - 📖 https://github.com/ZeinabMahfouz/House_Pricing
         - 💬 zeinab.h.mahfouz@gmail.com
         - ⭐ https://github.com/ZeinabMahfouz
         - 📧 zeinab.h.mahfouz@gmail.com
