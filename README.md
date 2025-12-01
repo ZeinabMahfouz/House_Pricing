@@ -64,7 +64,7 @@ A comprehensive **end-to-end Machine Learning project** for predicting house pri
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/house-pricing.git
+git clone https://github.com/ZeinabMahfouz/House_Pricing
 cd house-pricing
 ```
 
@@ -202,10 +202,9 @@ streamlit run app.py
 The app will open at `http://localhost:8501`
 
 **App Features:**
-- 🏠 **Predict Price**: Enter house details, get instant estimates
-- 📊 **Data Analysis**: Interactive visualizations and insights
-- 📖 **Feature Guide**: Understand all features
-- 🎯 **Sample Data**: Test with pre-loaded examples
+- 🏠 **Single Prediction**: Enter house details, get instant estimates
+- 📦 **Batch Predictions**: Upload CSV file to predict multiple houses at once
+- 📊 **Model Analytics & Insights**: Interactive visualizations and insights
 - ℹ️ **About**: Project information
 
 ---
