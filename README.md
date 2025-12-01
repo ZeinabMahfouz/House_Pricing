@@ -54,13 +54,6 @@ A comprehensive **end-to-end Machine Learning project** for predicting house pri
 ### Live Demo
 🔗 [[Try the app here](https://your-app-url.streamlit.app)](https://housepricing-zeinabmahfouz.streamlit.app/)
 
-### Screenshots
-
-| Prediction Page | Data Analysis | Feature Guide |
-|---|---|---|
-| ![Predict](images/predict_page.png) | ![Analysis](images/analysis_page.png) | ![Guide](images/feature_guide.png) |
-
----
 
 ## 🚀 Installation
 
